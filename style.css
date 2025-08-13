@@ -1,0 +1,276 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------------------announcement-bar--------------------------------- */
+
+.announcement-bar {
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a09;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.announcement-bar p {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+}
+
+/* ---------------------------------header--------------------------------- */
+
+.header {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  position: relative;
+  overflow: hidden;
+}
+
+.header video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.7;
+}
+
+/* Video Overlay (Dark Semi-Transparent Layer) */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* ---------------------------------navigation--------------------------------- */
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 90%;
+  height: 100px;
+  z-index: 10;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+.drop-menues,
+.menues,
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.drop-menues a,
+.menues a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.icons {
+  margin-left: 5%;
+}
+
+.icons i {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.header-content {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.header-content p {
+  text-align: center;
+  color: rgba(245, 245, 245, 1);
+  font-size: 70px;
+  font-weight: 400;
+  font-style: regular;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: -4%;
+}
+
+.header-content button {
+  background-color: transparent;
+  color: rgba(245, 245, 245, 1);
+  padding: 10px 50px;
+  border: 2px solid rgba(245, 245, 245, 1);
+  border-radius: 35px;
+  font-size: 14px;
+  font-style: medium;
+  font-weight: 500;
+  font-family: "Barlow", sans-serif;
+  cursor: pointer;
+}
+
+/* ---------------------------------collection--------------------------------- */
+.collection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(246, 248, 242, 1);
+}
+
+.collection h2 {
+  color: rgba(10, 10, 9, 1);
+  font-size: 60px;
+  font-weight: 400;
+  font-style: regular;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: -4%;
+}
+
+.slider-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  width: 80%;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px;
+}
+
+.card {
+  width: 330px;
+  height: 450px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-arrow {
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.prev { left: -50px; }
+.next { right: -50px; }
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  transition: all 0.3s;
+}
+
+.card h3 {
+  color: rgba(245, 245, 245, 1);
+  font-size: 25px;
+  font-weight: 400;
+  font-style: regular;
+  font-family: "Barlow", sans-serif;
+  margin: 10px 0;
+}
+
+.card button {
+  background-color: transparent;
+  font-family: "Barlow", sans-serif;
+  color: rgba(245, 245, 245, 1);
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.slider-content i {
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0 50px;
+}
+
+.slider-content i:hover {
+  transform: scale(1.1);
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.slider-dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.slider-dots span.active {
+  background: #0a0a09;
+}
