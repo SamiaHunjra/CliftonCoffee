@@ -163,7 +163,7 @@ html {
   letter-spacing: -4%;
 }
 
-.slider-content{
+.slider-content {
   width: 100%;
   height: 100%;
   display: flex;
@@ -204,8 +204,12 @@ html {
   z-index: 20;
 }
 
-.prev { left: -50px; }
-.next { right: -50px; }
+.prev {
+  left: -50px;
+}
+.next {
+  right: -50px;
+}
 
 .card img {
   width: 100%;
@@ -273,4 +277,63 @@ html {
 
 .slider-dots span.active {
   background: #0a0a09;
+}
+
+/* ---------------------------------footer--------------------------------- */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newsletter {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  background-color: #e0e1da;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter .news-text {
+  color: rgba(10, 10, 9, 1);
+  font-size: 55px;
+  font-weight: 400;
+  font-style: regular;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: -0.04em;
+  margin-bottom: 0px;
+  line-height: 1.1;
+}
+
+.news-text p {
+  margin: 0;
+}
+
+.newsletter .text {
+  color: rgba(10, 10, 9, 1);
+  font-size: 15px;
+  font-weight: 400;
+  font-style: regular;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: -0.04em;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.newsletter .text p {
+  margin: 0;
+}
+
+.newsletter .search {
+  margin-top: 20px;
+}
+
+.bottom {
+  background-color: black;
+  height: 300px;
+  width: 100%;
 }
